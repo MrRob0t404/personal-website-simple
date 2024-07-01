@@ -7,46 +7,44 @@
 #top-section {
   display: flex;
   height: 30%;
-  border: #c31a1a 1px solid;
+  /* border: #c31a1a 1px solid; */
 }
 
 #info-about-me-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 0 10px 0 10px;
   width: 40%;
-  border: #c31a96 1px solid;
+  /* border: #c31a96 1px solid; */
 }
 
 .about-me-cards {
-  margin: 10px 10px 10px 10px;
+  margin: 0 10px;
   padding: 20px;
   border-radius: 5px;
   height: 40%;
 }
 
 #info {
-  background-color: #b8c31a;
   border: black 1px solid;
+  margin-bottom: 10px;
 }
 
 #about-me {
-  background-color: #c31a1a;
   border: black 1px solid;
+  margin-top: 10px;
 }
 
 #self-img {
   display: flex;
   width: 60%;
   margin: 0 10px 0 10px;
-  border: green 1px solid;
+  /* border: green 1px solid; */
 }
 
 #temp {
   border: blue 1px solid;
   width: 100%;
-  margin: 10px;
   background-color: blue;
 }
 
@@ -61,7 +59,7 @@
   display: flex;
   justify-content: space-evenly;
   height: 30%;
-  border: #c31a1a 1px solid;
+  /* border: #c31a1a 1px solid; */
 }
 
 #experiernce {
@@ -89,7 +87,7 @@
   display: flex;
   height: 30%;
   justify-content: space-evenly;
-  border: #c31a1a 1px solid;
+  /* border: #c31a1a 1px solid; */
 }
 
 #contact {
@@ -105,16 +103,16 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 0 10px 0 10px;
   padding: 20px;
   border: #c31a1a 1px solid;
 }
 
 /* Shared Properties */
 .section {
-  margin: 10px 0 10px 0;
+  margin: 24px 0 24px 0;
 }
 
 .cards {
   border-radius: 15px;
+  margin: 0 10px 0 10px;
 }
