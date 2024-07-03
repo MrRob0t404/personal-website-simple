@@ -80,6 +80,7 @@ ul li {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 /* ---------- Middle Section ---------- */
@@ -160,7 +161,6 @@ ul li {
 
 /* ---------- Shared Properties ---------- */
 .section {
-  margin: 16px 16px 16px 16px;
   width: 100%;
 }
 
