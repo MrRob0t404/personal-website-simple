@@ -52,7 +52,7 @@ ul li {
 #info-about-me-wrapper {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   height: 100%;
   margin-right: 16px;
 }
@@ -68,17 +68,18 @@ ul li {
 }
 
 #self-img {
-  display: flex;
-  width: 70%;
+  height: 100%;
+  width: 60%;
 }
 
-#temp {
-  width: 100%;
-}
+/* #temp {
+  height: 100%;
+} */
 
 #temp img {
   height: 100%;
-  /* object-fit: ontain; */
+  width: 100%;
+  object-fit: contain;
 }
 
 /* ---------- Middle Section ---------- */
