@@ -4,9 +4,6 @@
 }
 
 body {
-  width: 1080px;
-  height: 100%;
-  display: flex;
   background-color: rgb(240, 240, 240);
   background-color: linear-gradient(
     45deg,
@@ -14,21 +11,23 @@ body {
     rgba(255, 255, 255, 1) 50%,
     rgba(240, 240, 240, 1) 98%
   );
+  align-items: center;
+  color: #424242;
+  display: flex;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
-  color: #424242;
   font-style: normal;
-  display: flex;
+  font-weight: 200;
+  height: 100%;
   justify-content: center;
-  align-items: center;
   margin: auto;
   padding: 0;
+  width: 1080px;
 }
 
 .fullscreen-element {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 ul {
@@ -53,14 +52,14 @@ ul li {
 #info-about-me-wrapper {
   display: flex;
   flex-direction: column;
-  width: 40%;
   height: 100%;
   margin-right: 16px;
+  width: 40%;
 }
 
 #info {
-  margin-bottom: 16px;
   height: 30%;
+  margin-bottom: 16px;
 }
 
 #info-ul-container {
@@ -94,17 +93,17 @@ ul li {
 #experiernce {
   display: flex;
   flex-direction: column;
-  width: 50%;
   margin-right: 16px;
+  width: 50%;
 }
 
 #music {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 50%;
   margin-left: 16px;
   padding: 16px;
+  width: 50%;
 }
 
 /* ---------- Bottom Section ---------- */
@@ -124,9 +123,10 @@ ul li {
 #tech-stack {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  justify-items: center;
   margin-left: 16px;
   padding: 16px;
+  width: 70%;
 }
 
 #tech-stack-list {
@@ -135,24 +135,25 @@ ul li {
 }
 
 .tech-stack-card {
+  align-content: space-around;
+  align-items: center;
   display: flex;
   flex-direction: row;
   height: 100%;
-  align-items: center;
-  align-content: space-evenly;
-  margin-right: 8px;
+  margin: 8px;
+  width: 95%;
 }
 
 .tech-stack-card-icon {
-  padding: 16px;
-  margin: 8px;
-  border: rgb(156, 156, 156) 1px dashed;
   border-radius: 8px;
+  border: rgb(156, 156, 156) 1px dashed;
+  margin: 8px;
+  padding: 16px;
 }
 
 .tech-stack-card-info {
-  overflow-wrap: anywhere;
   margin-right: 16px;
+  overflow-wrap: anywhere;
 }
 
 #tech-stack-list {
@@ -162,15 +163,12 @@ ul li {
 
 /* ---------- Shared Properties ---------- */
 .section {
-  width: 100%;
   margin: 16px 0;
+  width: 100%;
 }
 
 .cards {
   border-radius: 16px;
-  border: var(--border-color) 1px solid;
-  margin: 8px 8px 8px 8px;
-  padding: 16px;
   background: rgb(240, 240, 240);
   background: linear-gradient(
     45deg,
@@ -178,7 +176,10 @@ ul li {
     rgba(255, 255, 255, 1) 50%,
     rgba(240, 240, 240, 1) 98%
   );
+  border: var(--border-color) 1px solid;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0.25rem 1.25rem 0px;
+  margin: 8px 8px 8px 8px;
+  padding: 16px;
 }
 
 .experience-ul-container {
@@ -194,39 +195,39 @@ ul li {
 }
 
 #active .active-item {
-  position: relative;
   padding-left: 20px; /* Adjust padding to make space for custom bullet */
+  position: relative;
 }
 
 #active .non-active-item {
-  position: relative;
   padding-left: 20px; /* Adjust padding to make space for custom bullet */
+  position: relative;
 }
 
 #active .active-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
   background-color: green; /* Green light color */
   border-radius: 50%; /* Make it round */
   box-shadow: 0 0 10px green; /* Glow effect */
-}
-
-#active .non-active-item::before {
   content: "";
-  position: absolute;
+  height: 10px;
   left: 0;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
-  height: 10px;
+}
+
+#active .non-active-item::before {
   background-color: grey; /* Green light color */
   border-radius: 50%; /* Make it round */
   box-shadow: 0 0 10px grey; /* Glow effect */
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
 }
 
 /* ---------- Media Queries ---------- */
