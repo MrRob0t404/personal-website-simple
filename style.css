@@ -1,3 +1,44 @@
+/* Variables and Body */
+:root {
+  --border-color: rgb(225, 225, 225);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(
+    45deg,
+    rgba(240, 240, 240, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(240, 240, 240, 1) 98%
+  );
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
+
+.fullscreen-element {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  padding: 0 16px;
+  margin: 16px 0 16px 0;
+}
+
+ul li {
+  margin: 8px 0 8px 0;
+}
+
 /* Intro */
 #intro {
   text-align: center;
@@ -6,70 +47,46 @@
 /* Top Section */
 #top-section {
   display: flex;
-  height: 30%;
-  /* border: #c31a1a 1px solid; */
+  height: 50%;
 }
 
 #info-about-me-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 40%;
-  /* border: #c31a96 1px solid; */
-}
-
-.about-me-cards {
-  margin: 0 10px;
-  padding: 20px;
-  border-radius: 5px;
-  height: 40%;
+  margin-right: 16px;
 }
 
 #info {
-  border: black 1px solid;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  height: 30%;
 }
 
-#about-me {
-  border: black 1px solid;
-  margin-top: 10px;
+#info-ul-container {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
 }
 
 #self-img {
   display: flex;
   width: 60%;
-  margin: 0 10px 0 10px;
-  /* border: green 1px solid; */
 }
 
 #temp {
-  border: blue 1px solid;
   width: 100%;
-  background-color: blue;
 }
-
-/* #portrait {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-} */
 
 /* Middle Section */
 #middle-section {
   display: flex;
-  justify-content: space-evenly;
-  height: 30%;
-  /* border: #c31a1a 1px solid; */
+  height: 32em;
 }
 
 #experiernce {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 60%;
-  margin: 0 10px 0 10px;
-  padding: 20px;
-  border: #c31a1a 1px solid;
+  margin-right: 16px;
 }
 
 #music {
@@ -77,42 +94,125 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 40%;
-  margin: 0 10px 0 10px;
-  padding: 20px;
-  border: #301ac3 1px solid;
+  margin-left: 16px;
+  padding: 16px;
 }
 
 /* Bottom Section */
 #bottom-section {
   display: flex;
-  height: 30%;
-  justify-content: space-evenly;
-  /* border: #c31a1a 1px solid; */
+  height: 20%;
 }
 
 #contact {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: 0 10px 0 10px;
-  padding: 20px;
-  border: #c31a1a 1px solid;
+  width: 30%;
+  margin-right: 16px;
+  padding: 16px;
 }
 
 #tech-stack {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 20px;
-  border: #c31a1a 1px solid;
+  width: 70%;
+  margin-left: 16px;
+  padding: 16px;
+}
+
+#tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-stack-card {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  align-content: space-evenly;
+  margin-right: 8px;
+}
+
+.tech-stack-card-icon {
+  padding: 16px;
+  margin: 8px;
+  border: rgb(156, 156, 156) 1px dashed;
+  border-radius: 8px;
+}
+
+.tech-stack-card-info {
+  margin-right: 16px;
+}
+
+#tech-stack-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
 }
 
 /* Shared Properties */
 .section {
-  margin: 24px 0 24px 0;
+  margin: 16px 16px 16px 16px;
 }
 
 .cards {
-  border-radius: 15px;
-  margin: 0 10px 0 10px;
+  border-radius: 16px;
+  border: var(--border-color) 1px solid;
+  margin: 8px 8px 8px 8px;
+  padding: 16px;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(
+    45deg,
+    rgba(240, 240, 240, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(240, 240, 240, 1) 98%
+  );
+}
+
+.experience-ul-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Special Properties */
+#active {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+#active .active-item {
+  position: relative;
+  padding-left: 20px; /* Adjust padding to make space for custom bullet */
+}
+
+#active .non-active-item {
+  position: relative;
+  padding-left: 20px; /* Adjust padding to make space for custom bullet */
+}
+
+#active .active-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: green; /* Green light color */
+  border-radius: 50%; /* Make it round */
+  box-shadow: 0 0 10px green; /* Glow effect */
+}
+
+#active .non-active-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: grey; /* Green light color */
+  border-radius: 50%; /* Make it round */
+  box-shadow: 0 0 10px grey; /* Glow effect */
 }
