@@ -4,7 +4,7 @@
 }
 
 body {
-  width: 100%;
+  width: 1080px;
   height: 100%;
   display: flex;
   background: rgb(240, 240, 240);
@@ -47,13 +47,14 @@ ul li {
 /* Top Section */
 #top-section {
   display: flex;
-  height: 50%;
+  width: 100%;
 }
 
 #info-about-me-wrapper {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
+  height: 100%;
   margin-right: 16px;
 }
 
@@ -69,7 +70,7 @@ ul li {
 
 #self-img {
   display: flex;
-  width: 60%;
+  width: 70%;
 }
 
 #temp {
@@ -80,12 +81,13 @@ ul li {
 #middle-section {
   display: flex;
   height: 32em;
+  width: 100%;
 }
 
 #experiernce {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   margin-right: 16px;
 }
 
@@ -93,7 +95,7 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 40%;
+  width: 50%;
   margin-left: 16px;
   padding: 16px;
 }
@@ -220,7 +222,7 @@ ul li {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   /* Styles for screens smaller than 600px */
   #about-me {
     /* Example style adjustments for mobile */
