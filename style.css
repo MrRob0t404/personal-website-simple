@@ -17,6 +17,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
+  color: #424242;
   font-style: normal;
   display: flex;
   justify-content: center;
@@ -162,6 +163,7 @@ ul li {
 /* ---------- Shared Properties ---------- */
 .section {
   width: 100%;
+  margin: 16px 0;
 }
 
 .cards {
