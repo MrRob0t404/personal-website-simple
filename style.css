@@ -278,6 +278,7 @@ ul li {
     width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
     width: fill-available;
     height: 100%;
+    margin: auto;
   }
 
   #info {
@@ -302,10 +303,11 @@ ul li {
   }
 
   #self-img {
-    width: 95%;
+    width: 100%;
     width: -moz-available;
     width: -webkit-fill-available;
     width: fill-available;
+    margin: auto;
   }
 
   #temp {
@@ -317,7 +319,7 @@ ul li {
 
   #temp img {
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 
@@ -343,7 +345,7 @@ ul li {
     width: -moz-available; /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
     width: fill-available;
-    /* margin: auto; */
+    margin: 8px;
   }
 
   #music {
@@ -351,6 +353,7 @@ ul li {
     flex-direction: column;
     align-items: center;
     width: -webkit-fill-available;
+    margin: 8px;
   }
 
   /* Bottom Section */
@@ -367,6 +370,7 @@ ul li {
     flex-direction: column;
     align-items: center;
     width: -webkit-fill-available;
+    margin: 8px;
   }
 
   #tech-stack {
@@ -375,6 +379,7 @@ ul li {
     align-items: center;
     width: -webkit-fill-available;
     height: 100%;
+    margin: 8px;
   }
 
   #tech-stack-list {
