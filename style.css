@@ -142,6 +142,7 @@ ul li {
 }
 
 .tech-stack-card-info {
+  overflow-wrap: anywhere;
   margin-right: 16px;
 }
 
@@ -215,4 +216,21 @@ ul li {
   background-color: grey; /* Green light color */
   border-radius: 50%; /* Make it round */
   box-shadow: 0 0 10px grey; /* Glow effect */
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+  #about-me {
+    /* Example style adjustments for mobile */
+    padding: 20px;
+    text-align: center;
+  }
+  .cards {
+    /* Adjust card layout for mobile */
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
