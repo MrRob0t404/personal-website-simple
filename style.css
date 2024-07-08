@@ -132,6 +132,23 @@ ul li {
 #tech-stack-list {
   display: flex;
   flex-wrap: wrap;
+  /* align-items: stretch; Default */
+  justify-content: space-around;
+  /* width: 100%; */
+}
+
+#social-icon-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 16px; */
+  justify-content: space-evenly;
+}
+
+.social-icon {
+  width: 35%;
+  height: 40%;
 }
 
 .tech-stack-card {
