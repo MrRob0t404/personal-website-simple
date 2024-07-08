@@ -115,9 +115,9 @@ ul li {
 #contact {
   display: flex;
   flex-direction: column;
-  width: 30%;
   margin-right: 16px;
   padding: 16px;
+  width: 30%;
 }
 
 #tech-stack {
