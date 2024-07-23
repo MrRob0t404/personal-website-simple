@@ -1,3 +1,5 @@
+@import url("./assets/fonts/css/satoshi.css");
+
 /* ---------- Variables and Body ---------- */
 :root {
   --border-color: rgb(225, 225, 225);
@@ -14,7 +16,7 @@ body {
   align-items: center;
   color: #424242;
   display: flex;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Satoshi-Bold", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 200;
