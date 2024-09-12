@@ -10,7 +10,6 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -54,7 +53,7 @@ ul li {
   display: flex;
   height: 100px;
   justify-content: space-between;
-  margin: 25px 0 25px 0;
+  margin: 25px 24px 25px 24px;
   padding: 1rem 24px 1rem 1rem; /* Added right padding */
   width: 100%;
 }
@@ -107,8 +106,7 @@ ul li {
 #top-section {
   display: flex;
   align-items: flex-start;
-  gap: 25px; /* This creates space between the image and info */
-  margin-bottom: 24px; /* Add this line */
+  margin: 0 25px 24px 25px;
 }
 
 #info-about-me-wrapper {
@@ -121,7 +119,6 @@ ul li {
   flex-grow: 1; /* Allows the info section to take up remaining space */
   height: 476px;
   width: 565px;
-  margin-bottom: 16px;
 }
 
 #info-ul-container {
@@ -155,7 +152,7 @@ ul li {
   display: flex;
   height: 32em;
   width: 100%;
-  margin-top: 24px; /* Add this line */
+  margin: 0 0 0 25px;
 }
 
 #experiernce {
@@ -170,7 +167,6 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 25px;
   padding: 16px;
   width: 446px;
   height: 351px;
@@ -179,24 +175,27 @@ ul li {
 /* ---------- Bottom Section ---------- */
 #bottom-section {
   display: flex;
-  height: 20%;
+  margin: 0 25px 0 25px;
 }
 
 #contact {
   display: flex;
   flex-direction: column;
-  margin-right: 16px;
   padding: 16px;
-  width: 30%;
+  width: 447px;
+  height: 100px;
 }
 
 #tech-stack {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-left: 16px;
   padding: 16px;
-  width: 70%;
+  width: 100%; /* Changed from fixed width */
+  max-width: 447px; /* Added max-width */
+  min-height: 726px; /* Changed from fixed height to min-height */
+  height: auto; /* Allow height to adjust based on content */
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
 }
 
 #tech-stack-list {
@@ -208,9 +207,9 @@ ul li {
 #social-icon-container {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: 100px;
   justify-content: space-evenly;
-  width: 100%;
+  width: 447px;
 }
 
 .social-icon {
@@ -248,8 +247,6 @@ ul li {
 /* ---------- Shared Properties ---------- */
 .section {
   margin: 16px 0;
-  width: 100%;
-  margin-bottom: 25px; 
 }
 
 .cards {
@@ -552,10 +549,12 @@ ul li {
 }
 
 @media (max-width: 768px) {
-  #contact, #tech-stack, #side-content {
+  #contact,
+  #tech-stack,
+  #side-content {
     width: 100%;
   }
-  
+
   #contact {
     height: 100px; /* You might want to adjust this for smaller screens */
   }
@@ -606,7 +605,8 @@ ul li {
     width: 100%;
   }
 
-  #tech-stack, #contact {
+  #tech-stack,
+  #contact {
     width: 100%;
   }
 }
