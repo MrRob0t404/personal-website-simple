@@ -48,8 +48,6 @@ ul li {
 /* ---------- Intro ---------- */
 #nav-bar {
   align-items: center;
-  background-color: var(--primary-color);
-  border-radius: 8px;
   display: flex;
   height: 100px;
   justify-content: space-between;
@@ -105,18 +103,20 @@ ul li {
 /* ---------- Top Section ---------- */
 #top-section {
   display: flex;
+  align-items: flex-start;
+  gap: 25px; /* This creates space between the image and info */
 }
 
 #info-about-me-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  margin-right: 16px;
-  width: 40%;
+  margin-right: 25px;
 }
 
 #info {
-  height: 30%;
+  flex-grow: 1; /* Allows the info section to take up remaining space */
+  height: 476px;
+  width: 565px;
   margin-bottom: 16px;
 }
 
@@ -126,15 +126,15 @@ ul li {
 }
 
 #self-img {
-  height: 100%;
-  width: 60%;
-  display: flex;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+  width: 328px;
+  height: 476px;
+  overflow: hidden; /* Add this to crop the image if needed */
 }
 
 #temp {
-  height: 100%;
   width: 100%;
-  display: flex;
+  height: 100%;
 }
 
 #temp img {
@@ -144,12 +144,7 @@ ul li {
   border-radius: 8px;
 }
 
-#image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+/* Remove the #image selector if it's not being used */
 
 /* ---------- Middle Section ---------- */
 #middle-section {
@@ -161,17 +156,19 @@ ul li {
 #experiernce {
   display: flex;
   flex-direction: column;
-  margin-right: 16px;
-  width: 50%;
+  margin-right: 25px;
+  width: 447px;
+  height: 351px; 
 }
 
 #music {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 16px;
+  margin-left: 25px;
   padding: 16px;
-  width: 50%;
+  width: 446px;
+  height: 351px;
 }
 
 /* ---------- Bottom Section ---------- */
@@ -250,7 +247,7 @@ ul li {
 }
 
 .cards {
-  border-radius: 16px;
+  border-radius: 20px;
   background-color: var(--primary-color);
   border: var(--border-color) 1px solid;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0.25rem 1.25rem 0px;
@@ -491,6 +488,22 @@ ul li {
     padding: 0; /* Remove default padding */
   }
 }
+
+#content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-content {
+  flex: 1;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+#side-content {
+  width: 300px; /* Adjust as needed */
+}
+
+/* You may need to adjust other styles to fit this new layout */
 
 @keyframes fadeInAndSpread {
   from {
