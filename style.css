@@ -10,6 +10,10 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
   background-color: rgb(240, 240, 240);
   background-color: linear-gradient(
     45deg,
@@ -19,7 +23,6 @@ body {
   );
   align-items: center;
   color: #424242;
-  display: flex;
   font-family: "Satoshi-Bold", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
