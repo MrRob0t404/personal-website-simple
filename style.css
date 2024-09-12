@@ -14,7 +14,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: rgb(240, 240, 240);
+  background-color: #ecfec9;
   background-color: linear-gradient(
     45deg,
     rgba(240, 240, 240, 1) 0%,
@@ -108,6 +108,7 @@ ul li {
   display: flex;
   align-items: flex-start;
   gap: 25px; /* This creates space between the image and info */
+  margin-bottom: 24px; /* Add this line */
 }
 
 #info-about-me-wrapper {
@@ -154,6 +155,7 @@ ul li {
   display: flex;
   height: 32em;
   width: 100%;
+  margin-top: 24px; /* Add this line */
 }
 
 #experiernce {
@@ -161,7 +163,7 @@ ul li {
   flex-direction: column;
   margin-right: 25px;
   width: 447px;
-  height: 351px; 
+  height: 351px;
 }
 
 #music {
@@ -247,6 +249,7 @@ ul li {
 .section {
   margin: 16px 0;
   width: 100%;
+  margin-bottom: 25px; 
 }
 
 .cards {
@@ -494,19 +497,69 @@ ul li {
 
 #content-wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 25px; /* This creates space between main content and side content */
 }
 
 #main-content {
   flex: 1;
-  margin-right: 20px; /* Adjust as needed */
 }
 
 #side-content {
-  width: 300px; /* Adjust as needed */
+  width: 447px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* This creates space between tech stack and contact */
 }
 
-/* You may need to adjust other styles to fit this new layout */
+#tech-stack {
+  height: 726px;
+  width: 447px;
+  overflow-y: auto; /* In case the content exceeds the height */
+}
+
+/* Ensure the content inside tech-stack adjusts properly */
+#tech-stack-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* You might need to adjust the layout of the tech stack items */
+.tech-stack-card {
+  /* Existing styles */
+  width: 100%; /* Ensure cards take full width of the container */
+}
+
+/* Adjust side content container if necessary */
+#side-content {
+  width: 447px; /* Match the width of tech-stack */
+}
+
+#contact {
+  height: 100px;
+  width: 447px;
+  /* Retain any existing styles like background, border, etc. */
+}
+
+/* Adjust the side content container if necessary */
+#side-content {
+  width: 447px; /* Match the width of both tech-stack and contact */
+}
+
+/* Ensure there's some space between tech-stack and contact */
+#tech-stack {
+  margin-bottom: 24px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+  #contact, #tech-stack, #side-content {
+    width: 100%;
+  }
+  
+  #contact {
+    height: 100px; /* You might want to adjust this for smaller screens */
+  }
+}
 
 @keyframes fadeInAndSpread {
   from {
@@ -536,4 +589,24 @@ ul li {
 
 .animate-intro {
   animation: slideInFromLeft 1s ease-out forwards;
+}
+
+/* Ensure there's space between the image and "Latest release" section */
+#middle-section {
+  margin-top: 25px;
+}
+
+/* If you need to adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  #content-wrapper {
+    flex-direction: column;
+  }
+
+  #side-content {
+    width: 100%;
+  }
+
+  #tech-stack, #contact {
+    width: 100%;
+  }
 }
