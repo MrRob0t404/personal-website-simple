@@ -55,7 +55,7 @@ ul li {
   justify-content: space-between;
   margin: 25px 24px 25px 24px;
   padding: 1rem 24px 1rem 1rem; /* Added right padding */
-  width: 100%;
+  width: 1390px;
 }
 
 #nav-bar h1 {
@@ -116,7 +116,6 @@ ul li {
 }
 
 #info {
-  flex-grow: 1; /* Allows the info section to take up remaining space */
   height: 476px;
   width: 565px;
 }
