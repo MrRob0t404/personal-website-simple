@@ -118,18 +118,18 @@ ul li {
 #info {
   height: 476px;
   width: 565px;
+  padding: 0; /* Remove any padding */
 }
 
 #info-ul-container {
-  list-style-type: none; 
-  padding-left: 0; 
+  list-style-type: none;
+  padding-left: 0;
 }
 
 #self-img {
-  flex-shrink: 0; 
-  width: 328px;
   height: 476px;
-  overflow: hidden; /* Add this to crop the image if needed */
+  width: 328px;
+  overflow: hidden;
 }
 
 #temp {
@@ -143,8 +143,6 @@ ul li {
   object-fit: cover;
   border-radius: 8px;
 }
-
-/* Remove the #image selector if it's not being used */
 
 /* ---------- Middle Section ---------- */
 #middle-section {
@@ -171,16 +169,15 @@ ul li {
   height: 351px;
 }
 
-/* ---------- Bottom Section ---------- */
+/* ---------- Right Most Section ---------- */
 #bottom-section {
   display: flex;
-  margin: 0 25px 0 25px;
 }
 
 #contact {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 0;
   width: 447px;
   height: 100px;
 }
@@ -189,7 +186,6 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding: 16px;
   width: 100%; /* Changed from fixed width */
   max-width: 447px; /* Added max-width */
   min-height: 726px; /* Changed from fixed height to min-height */
@@ -230,11 +226,10 @@ ul li {
   border-radius: 8px;
   border: rgb(156, 156, 156) 1px dashed;
   margin: 8px;
-  padding: 16px;
+  padding: 0;
 }
 
 .tech-stack-card-info {
-  margin-right: 16px;
   overflow-wrap: anywhere;
 }
 
@@ -253,7 +248,8 @@ ul li {
   background-color: var(--primary-color);
   border: var(--border-color) 1px solid;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0.25rem 1.25rem 0px;
-  padding: 16px;
+  padding: 0;
+  box-sizing: border-box;
   opacity: 0;
   transform: scale(0.5);
 }
@@ -504,7 +500,6 @@ ul li {
   width: 447px;
   display: flex;
   flex-direction: column;
-  gap: 25px; /* This creates space between tech stack and contact */
 }
 
 #tech-stack {
