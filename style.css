@@ -489,7 +489,6 @@ ul li {
 
 #content-wrapper {
   display: flex;
-  gap: 25px; /* This creates space between main content and side content */
 }
 
 #main-content {
