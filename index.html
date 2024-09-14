@@ -30,7 +30,7 @@
           </ul>
         </nav>
       </nav>
-      
+
       <div id="content-wrapper">
         <div id="main-content">
           <div id="top-section" class="section">
@@ -61,34 +61,16 @@
             </div>
           </div>
           <div id="middle-section" class="section">
-            <div id="experiernce" class="cards">
+            <div id="about-me" class="cards">
               <h1>Past experience</h1>
-              <ul id="active">
-                <li class="active-item">
-                  <div class="experience-ul-container">
-                    <p>ALLOY || ENGINEERING ENABLEMENT</p>
-                    <p>2022 - CURRENT</p>
-                  </div>
-                </li>
-                <li class="non-active-item">
-                  <div class="experience-ul-container">
-                    <p>GOOGLE || CLASSROOM API</p>
-                    <p>2020 - 2022</p>
-                  </div>
-                </li>
-                <li class="non-active-item">
-                  <div class="experience-ul-container">
-                    <p>PELOTON || STUDIO - BIKE & TREAD</p>
-                    <p>2019 - 2020</p>
-                  </div>
-                </li>
-                <li class="non-active-item">
-                  <div class="experience-ul-container">
-                    <p>2U, INC. || QA ENGINEER</p>
-                    <p>2018 - 2019</p>
-                  </div>
-                </li>
-              </ul>
+              <p>
+                A skilled full-stack engineer based in NYC, known for developing
+                seamless web and mobile applications using React, React Native,
+                and Node.js. He combines frontend and backend expertise to
+                deliver high-performance, user-centered solutions across
+                platforms. When he's not coding, he enjoys DJing and creating
+                art using code.
+              </p>
             </div>
             <div id="music" class="cards">
               <h1>Latest release</h1>
@@ -151,109 +133,21 @@
         <div id="side-content">
           <div id="tech-stack" class="cards">
             <h1>Tech Stack</h1>
-            <div>
-              <ul id="tech-stack-list">
-                <li>
-                  <div class="tech-stack-card">
-                    <div class="tech-stack-card-icon">
-                      <i class="fa-brands fa-node fa-2xl"></i>
-                    </div>
-                    <div class="tech-stack-card-info">
-                      <h4>NodeJS</h4>
-                      <p>Backend</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="tech-stack-card">
-                    <div class="tech-stack-card-icon">
-                      <i
-                        class="fa-brands fa-react fa-solid fa-sync fa-spin fa-2xl"
-                        style="--fa-animation-duration: 15s"
-                      ></i>
-                    </div>
-                    <div class="tech-stack-card-info">
-                      <h4>ReactJS</h4>
-                      <p>Frontend</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="tech-stack-card">
-                    <div class="tech-stack-card-icon">
-                      <i class="fa-brands fa-node-js fa-2xl"></i>
-                    </div>
-                    <div class="tech-stack-card-info">
-                      <h4>ExpressJS</h4>
-                      <p>Backend</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="tech-stack-card">
-                    <div class="tech-stack-card-icon">
-                      <i class="fa-solid fa-database fa-2xl"></i>
-                    </div>
-                    <div class="tech-stack-card-info">
-                      <h4>SQL</h4>
-                      <p>Database</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="tech-stack-card">
-                    <div class="tech-stack-card-icon">
-                      <i class="fa-brands fa-python fa-2xl"></i>
-                    </div>
-                    <div class="tech-stack-card-info">
-                      <h4>DJango</h4>
-                      <p>Python Backend</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="tech-stack-card">
-                    <div class="tech-stack-card-icon">
-                      <i class="fa-brands fa-webflow fa-2xl"></i>
-                    </div>
-                    <div class="tech-stack-card-info">
-                      <h4>Webflow</h4>
-                      <p>No Code Solution</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <ul id="tech-stack-list">
+              <!-- All content here has been removed -->
+            </ul>
           </div>
-  
+
           <div id="contact" class="cards">
-            <!-- All content removed from here -->
+            <div class="contact">
+              <a href="#" class="contact-link">LinkedIn</a>
+              <a href="#" class="contact-link">Twitter</a>
+              <a href="#" class="contact-link">Portfolio</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const cards = document.querySelectorAll(".cards");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry, index) => {
-              if (entry.isIntersecting) {
-                setTimeout(() => {
-                  entry.target.classList.add("animate");
-                }, index * 200);
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.1 }
-        ); // Trigger when 10% of the element is visible
-
-        cards.forEach((card) => {
-          observer.observe(card);
-        });
-      });
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
