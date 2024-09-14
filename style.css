@@ -3,7 +3,7 @@
 /* ---------- Variables and Body ---------- */
 :root {
   --border-color: rgb(225, 225, 225);
-  --primary-color: #82d30f;
+  --primary-color: #81d30fb9;
   --secondary-color: #355611;
   --text-color: black;
   --background-color: white;
@@ -142,6 +142,12 @@ ul li {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+#temp img.animate {
+  animation: fadeInAndSpread 0.5s ease-out forwards;
 }
 
 /* ---------- Middle Section ---------- */
@@ -161,15 +167,20 @@ ul li {
   padding: 24px;
 }
 
-#music {
+#contact-me {
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 16px;
   width: 446px;
   height: 351px;
 }
 
+#contact-me-container {
+  display: flex;
+  justify-content: space-between;
+}
 /* ---------- Right Most Section ---------- */
 #bottom-section {
   display: flex;
@@ -194,6 +205,7 @@ ul li {
   overflow-y: auto; /* Add scrollbar if content exceeds height */
   margin-bottom: 24px;
   padding: 24px;
+  overflow-x: hidden;
 }
 
 #tech-stack-list {
@@ -202,17 +214,11 @@ ul li {
   margin: 0;
 }
 
-#social-icon-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  justify-content: space-evenly;
-  width: 447px;
-}
-
-.social-icon {
-  height: 40%;
-  width: 35%;
+.divider {
+  width: 399px;
+  margin: 10px auto;
+  border: none;
+  border-top: 2px solid black; /* Adjust color as needed */
 }
 
 /* ---------- Shared Properties ---------- */
@@ -571,7 +577,7 @@ ul li {
 }
 
 .contact-link span::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
