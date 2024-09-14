@@ -146,12 +146,12 @@ ul li {
   overflow: hidden;
 }
 
-#temp {
+#img-container {
   width: 100%;
   height: 100%;
 }
 
-#temp img {
+#img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -160,7 +160,7 @@ ul li {
   transform: scale(0.5);
 }
 
-#temp img.animate {
+#img-container img.animate {
   animation: fadeInAndSpread 0.5s ease-out forwards;
 }
 
@@ -233,6 +233,25 @@ ul li {
   margin: 10px auto;
   border: none;
   border-top: 2px solid black; /* Adjust color as needed */
+}
+
+#temp {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+#temp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+#temp img.animate {
+  animation: fadeInAndSpread 0.5s ease-out forwards;
 }
 
 /* ---------- Shared Properties ---------- */
