@@ -115,12 +115,26 @@ ul li {
   margin-right: 25px;
 }
 
+#icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+}
+
 #info {
   height: 476px;
   width: 565px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+#info-text {
+  padding: 0 66px 24px 24px;
+}
 #info-ul-container {
   list-style-type: none;
   padding-left: 0;
