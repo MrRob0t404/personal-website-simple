@@ -5,7 +5,7 @@
   --border-color: rgb(225, 225, 225);
   --primary-color: #81d30fb9;
   --secondary-color: #355611;
-  --text-color: black;
+  --text-color: #424242;
   --background-color: white;
 }
 
@@ -278,7 +278,7 @@ ul li {
   width: 399px;
   margin: 10px auto;
   border: none;
-  border-top: 2px solid black; /* Adjust color as needed */
+  border-top: 2px solid #4242422d; /* Adjust color as needed */
 }
 
 #temp {
