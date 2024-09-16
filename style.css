@@ -139,6 +139,12 @@ ul li {
 
 #info-text {
   width: 80%;
+  font-family: "Gilroy-Bold", Comic Sans MS;
+  font-size: 22px;
+}
+
+#info-text span {
+  font-family: "Gilroy-LightItalic", Comic Sans MS;
 }
 
 #info-ul-container {
@@ -190,7 +196,7 @@ ul li {
   font-family: "Gilroy-Light", Comic Sans MS;
   text-align: left;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 17px;
   width: 70%;
 }
 
