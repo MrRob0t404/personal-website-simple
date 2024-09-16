@@ -145,4 +145,100 @@
   font-display: swap;
   font-style: italic;
 }
+/**
+* @license
+*
+* Font Family: Satoshi
+* Designed by: Satoshi Type
+* URL: https://www.satoshitype.com
+* © 2024 Satoshi Type Foundry
+*
+* Satoshi Light 
+* Satoshi Regular 
+* Satoshi Medium 
+* Satoshi Bold 
+* Satoshi Black 
+*
+*/
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+       url('../fonts/Gilroy-Light.woff') format('woff'),
+       url('../fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-LightItalic';
+  src: url('../fonts/Gilroy-LightItalic.woff2') format('woff2'),
+       url('../fonts/Gilroy-LightItalic.woff') format('woff'),
+       url('../fonts/Gilroy-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('../fonts/Gilroy-Regular.woff') format('woff'),
+       url('../fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-Italic';
+  src: url('../fonts/Gilroy-Italic.woff2') format('woff2'),
+       url('../fonts/Gilroy-Italic.woff') format('woff'),
+       url('../fonts/Gilroy-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+       url('../fonts/Gilroy-Medium.woff') format('woff'),
+       url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-MediumItalic';
+  src: url('../fonts/Gilroy-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Gilroy-MediumItalic.woff') format('woff'),
+       url('../fonts/Gilroy-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+       url('../fonts/Gilroy-Bold.woff') format('woff'),
+       url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy-BoldItalic';
+  src: url('../fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Gilroy-BoldItalic.woff') format('woff'),
+       url('../fonts/Gilroy-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: url('../fonts/Gilroy-Black.woff2') format('woff2'),
+       url('../fonts/Gilroy-Black.woff') format('woff'),
+       url('../fonts/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
 
