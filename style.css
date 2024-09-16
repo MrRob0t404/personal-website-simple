@@ -22,7 +22,7 @@ body {
   );
   align-items: center;
   color: #424242;
-  font-family: "Gilroy-Bold", Comic Sans MS;
+  font-family: "Gilroy-Regular", Comic Sans MS;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 200;
@@ -116,11 +116,17 @@ ul li {
 }
 
 #icon-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  object-fit: contain;
+  align-items: right;
+  height: 119px;
+  width: 119px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+#icon-container img {
+  height: 100%;
   width: 100%;
-  padding: 24px;
 }
 
 #info {
@@ -202,7 +208,22 @@ ul li {
 #contact-me-container {
   display: flex;
   justify-content: space-between;
+  font-family: "Gilroy-Bold", Comic Sans MS;
+  text-align: left;
+  line-height: 18px;
+  color: black;
 }
+
+#contact-me-title {
+  font-family: "Gilroy-Bold", Comic Sans MS;
+  text-align: left;
+  line-height: 25px;
+  font-size: x-large;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
 /* ---------- Right Most Section ---------- */
 #bottom-section {
   display: flex;
