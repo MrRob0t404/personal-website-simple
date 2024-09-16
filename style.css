@@ -121,7 +121,6 @@ ul li {
   height: 119px;
   width: 119px;
   margin-left: auto;
-  margin-right: 30px;
 }
 
 #icon-container img {
@@ -139,7 +138,7 @@ ul li {
 }
 
 #info-text {
-  padding: 0 66px 24px 24px;
+  width: 80%;
 }
 
 #info-ul-container {
@@ -200,7 +199,7 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: 24px;
   width: 446px;
   height: 351px;
 }
@@ -212,6 +211,8 @@ ul li {
   text-align: left;
   line-height: 18px;
   color: black;
+  height: 38px;
+  width: auto;
 }
 
 #contact-me-title {
@@ -222,6 +223,16 @@ ul li {
   padding: 0;
   margin: 0;
   color: black;
+}
+
+#arrow-icon-container {
+  height: 38px;
+  width: 38px;
+}
+
+#arrow-icon-container img {
+  height: 100%;
+  width: 100%;
 }
 
 /* ---------- Right Most Section ---------- */
@@ -293,7 +304,7 @@ ul li {
   background-color: var(--primary-color);
   border: var(--border-color) 1px solid;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0.25rem 1.25rem 0px;
-  padding: 0;
+  padding: 24px;
   box-sizing: border-box;
   opacity: 0;
   transform: scale(0.5);
