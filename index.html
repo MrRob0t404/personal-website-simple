@@ -25,8 +25,8 @@
         <nav>
           <ul>
             <li><a href="#popup2" class="button">Projects</a></li>
-            <li><a href="#popup2" class="button">About</a></li>
-            <li><a href="#popup2" class="button">Contact</a></li>
+            <li><a href="#about" class="button">About</a></li>
+            <li><a href="#contact-me-form" class="button">Contact</a></li>
           </ul>
         </nav>
       </nav>
@@ -69,18 +69,20 @@
               </p>
             </div>
             <div id="contact-me" class="cards">
-              <div id="contact-me-container">
-                <p>Have some questions?</p>
-                <div id="arrow-icon-container">
-                  <img
-                    src="./assets/icons/Arrow top right.png"
-                    alt="React Icon"
-                  />
+              <a href="#contact-me-form" class="button">
+                <div id="contact-me-container">
+                  <p>Have some questions?</p>
+                  <div id="arrow-icon-container">
+                    <img
+                      src="./assets/icons/Arrow top right.png"
+                      alt="React Icon"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div id="contact-me-title">
-                <h1>Contact Me</h1>
-              </div>
+                <div id="contact-me-title">
+                  <h1>Contact Me</h1>
+                </a>
+                </div>
             </div>
           </div>
         </div>
@@ -137,6 +139,26 @@
         <a class="cancel" href="#"></a>
         <div class="popup">
           <h2>Projects</h2>
+          <div class="content">
+            <p>Click outside the popup to close.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="overlay light">
+        <a class="cancel" href="#"></a>
+        <div class="popup">
+          <h2>About me</h2>
+          <div class="content">
+            <p>Click outside the popup to close.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-me-form" class="overlay light">
+        <a class="cancel" href="#"></a>
+        <div class="popup">
+          <h2>Let's Connect!</h2>
           <div class="content">
             <p>Click outside the popup to close.</p>
           </div>
