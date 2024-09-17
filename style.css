@@ -713,7 +713,7 @@ ul li {
 
 .popup {
   margin: 75px auto;
-  padding: 0;
+  padding: 24px;
   background: #fff;
   border: 1px solid #666;
   border-radius: 20px;
@@ -769,7 +769,7 @@ ul li {
 #about-me-modal-text-container {
   width: 50%;
   overflow: hidden;
-  padding: 24px;
+  padding: 0;
 }
 
 #about-modal-img-container {
