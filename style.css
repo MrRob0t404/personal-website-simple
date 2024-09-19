@@ -6,7 +6,7 @@
   --primary-color: #81d30fb9;
   --secondary-color: #355611;
   --text-color: #424242;
-  --background-color: white;
+  --background-color: #ecfec9;
 }
 
 a {
@@ -18,13 +18,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #ecfec9;
-  background-color: linear-gradient(
-    45deg,
-    rgba(240, 240, 240, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(240, 240, 240, 1) 98%
-  );
+  background-color: var(--background-color);
   align-items: center;
   color: #424242;
   font-family: "Gilroy-Regular", Comic Sans MS;
@@ -32,9 +26,7 @@ body {
   font-style: normal;
   font-weight: 200;
   height: 100%;
-  justify-content: center;
   margin: auto;
-  padding: 0;
   width: 1390px;
 }
 
@@ -216,7 +208,7 @@ ul li {
 }
 
 #about-me-modal {
-  background-color: #355611;
+  background-color: var(--background-color);
 }
 
 #contact-me-container {
@@ -769,10 +761,16 @@ ul li {
 #about-me-modal-text-container {
   width: 50%;
   overflow: hidden;
-  padding: 0;
+  padding-right: 24px;
 }
 
 #about-modal-img-container {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#about-modal-img-container iframe {
   width: 50%;
   overflow: hidden;
   border-radius: 20px;
@@ -782,4 +780,124 @@ ul li {
   width: 100%;
   height: 100%; /* Changed from auto to 100% */
   object-fit: cover; /* Added to maintain aspect ratio */
+}
+
+/* Contact me FORM */
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+}
+
+.formbold-input-flex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.formbold-input-flex > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formbold-textarea {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #dde3ec;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  outline: none;
+  resize: none;
+}
+
+.formbold-form-input::placeholder {
+  color: #536387;
+}
+
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+}
+
+.formbold-form-label {
+  color: #07074d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.formbold-form-input:focus + .formbold-form-label {
+  color: #6a64f1;
+}
+
+.formbold-input-file {
+  margin-top: 30px;
+}
+
+.formbold-input-file input[type="file"] {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: -1;
+}
+
+.formbold-input-file .formbold-input-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.formbold-filename-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 22px;
+}
+
+.formbold-filename {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  color: #536387;
+}
+
+.formbold-filename svg {
+  cursor: pointer;
+}
+
+.formbold-btn {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 12px 25px;
+  border: none;
+  font-weight: 500;
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
