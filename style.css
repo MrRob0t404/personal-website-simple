@@ -705,7 +705,7 @@ ul li {
 .popup {
   margin: 75px auto;
   padding: 24px;
-  background: #fff;
+  background: var(--background-color);
   border: 1px solid #666;
   border-radius: 20px;
   width: 50%;
@@ -794,7 +794,7 @@ ul li {
   margin: 0 auto;
   max-width: 550px;
   width: 100%;
-  background: white;
+  background: var(--background-color);
 }
 
 .formbold-input-flex {
@@ -819,16 +819,19 @@ ul li {
   padding-bottom: 10px;
   border: none;
   border-bottom: 1px solid #dde3ec;
-  background: #ffffff;
+  background: var(--secondary-color);
   font-weight: 500;
   font-size: 16px;
   color: #07074d;
   outline: none;
   resize: none;
 }
+.formbold-textarea ::placeholder {
+  color: white;
+}
 
 .formbold-form-input::placeholder {
-  color: #536387;
+  color: rgb(207, 207, 207);
 }
 
 .formbold-form-input:focus {
