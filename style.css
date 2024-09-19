@@ -762,6 +762,7 @@ ul li {
   width: 50%;
   overflow: hidden;
   padding-right: 24px;
+  padding-bottom: auto;
 }
 
 #about-modal-img-container {
