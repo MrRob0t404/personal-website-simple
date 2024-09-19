@@ -201,7 +201,7 @@ ul li {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 24px;
   width: 446px;
   height: 351px;
@@ -568,7 +568,6 @@ ul li {
   height: 100px;
   width: 447px;
   justify-content: center;
-  /* Retain any existing styles like background, border, etc. */
 }
 
 @media (max-width: 768px) {
