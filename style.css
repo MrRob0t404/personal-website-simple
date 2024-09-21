@@ -889,6 +889,10 @@ ul li {
   cursor: pointer;
 }
 
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
 .formbold-btn {
   font-size: 16px;
   border-radius: 5px;
@@ -899,8 +903,4 @@ ul li {
   color: white;
   cursor: pointer;
   margin-top: 25px;
-}
-
-.formbold-btn:hover {
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
