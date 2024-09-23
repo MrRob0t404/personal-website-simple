@@ -709,7 +709,7 @@ ul li {
   border: 1px solid #666;
   border-radius: 20px;
   width: 50%;
-  height: 70%;
+  height: auto;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   font-family: "Gilroy-Regular", Tahoma, Arial, sans-serif;
   position: relative;
@@ -826,6 +826,7 @@ ul li {
   outline: none;
   resize: none;
 }
+
 .formbold-textarea ::placeholder {
   color: white;
 }
