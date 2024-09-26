@@ -1,3 +1,4 @@
+/* Import FONT styles */
 @import url("./assets/fonts/css/fonts.css");
 
 /* ---------- Variables and Body ---------- */
@@ -35,15 +36,6 @@ body {
   width: 100%;
 }
 
-ul {
-  padding: 0 16px;
-  margin: 16px 0 16px 0;
-}
-
-ul li {
-  margin: 8px 0 8px 0;
-}
-
 /* ---------- Intro ---------- */
 #nav-bar {
   align-items: center;
@@ -70,18 +62,15 @@ ul li {
   margin-left: 48px;
 }
 
-#nav-bar nav ul li:first-child {
-  margin-left: 0;
-}
-
-#nav-bar nav ul li:last-child {
-  margin-right: 0; /* Ensures no extra margin on the last item */
-}
-
+/* Nav bar hover animation */
 #nav-bar nav ul li a {
   text-decoration: none;
   color: inherit;
   position: relative;
+}
+
+#nav-bar-items-container {
+  margin: 0;
 }
 
 #nav-bar nav ul li a::after {
@@ -99,7 +88,8 @@ ul li {
 #nav-bar nav ul li a:hover::after {
   transform: scaleX(1);
 }
-/* ---------- Top Section ---------- */
+
+/* ---------- First Third Section ---------- */
 #top-section {
   display: flex;
   align-items: flex-start;
@@ -173,7 +163,7 @@ ul li {
   animation: fadeInAndSpread 0.5s ease-out forwards;
 }
 
-/* ---------- Middle Section ---------- */
+/* ---------- Second Third Section ---------- */
 #middle-section {
   display: flex;
   height: 32em;
@@ -275,13 +265,6 @@ ul li {
   margin: 0;
 }
 
-.divider {
-  width: 399px;
-  margin: 10px auto;
-  border: none;
-  border-top: 2px solid #4242422d; /* Adjust color as needed */
-}
-
 #temp {
   width: 100%;
   height: 100%;
@@ -315,6 +298,13 @@ ul li {
   box-sizing: border-box;
   opacity: 0;
   transform: scale(0.5);
+}
+
+.divider {
+  width: 399px;
+  margin: 10px auto;
+  border: none;
+  border-top: 2px solid #4242422d; /* Adjust color as needed */
 }
 
 .experience-ul-container {
@@ -366,7 +356,6 @@ ul li {
 }
 
 /* ---------- Media Queries ---------- */
-
 @media (max-width: 600px) {
   body {
     width: 600px;
@@ -673,7 +662,7 @@ ul li {
   transform-origin: bottom left;
 }
 
-/* Modal CSS */
+/* ---------- Modal CSS---------- */
 .overlay {
   position: absolute;
   top: 0;
@@ -756,7 +745,7 @@ ul li {
   margin: 0;
 }
 
-/* Modal About Me */
+/* ---------- Modal - About Me ---------- */
 #about-me-modal-text-container {
   width: 50%;
   overflow: hidden;
@@ -782,7 +771,7 @@ ul li {
   object-fit: cover; /* Added to maintain aspect ratio */
 }
 
-/* Contact me FORM */
+/* ---------- Modal - Contact Me Form ---------- */
 .formbold-main-wrapper {
   display: flex;
   align-items: center;
