@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
     <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/ba34c9c532.js"
@@ -56,7 +49,7 @@
     <div id="main" class="fullscreen-element">
       <nav id="nav-bar" class="animate-intro cards">
         <h1>Simon Gaviria</h1>
-        <nav>
+        <nav id="nav-bar-items-container">
           <ul>
             <li><a href="#popup2" class="button">Projects</a></li>
             <li><a href="#about-me-modal" class="button">About</a></li>
@@ -292,7 +285,7 @@
                     rows="6"
                     name="message"
                     id="message"
-                    placeholder="Describe your idea!"
+                    placeholder="Give me a brief description of your idea!"
                     class="formbold-form-input"
                   ></textarea>
                   <label for="message" class="formbold-form-label">
@@ -306,6 +299,6 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./js/animation.mjs"></script>
+    <script src="./js/animation.mjs"></script>
   </body>
 </html>
